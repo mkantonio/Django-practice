@@ -11,4 +11,8 @@
         </p>
         {{ post.body|truncatewords:30|linebreaks }}
     {% endfor %}
+    <!--Pagination with function view-->
+    <!--    {% include "pagination.html" with page=posts %}-->
+    <!--Pagination with class based view-->
+    {% include "pagination.html" with page=page_obj %}
 {% endblock %}
